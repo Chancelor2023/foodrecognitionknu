@@ -22,6 +22,13 @@ Annotations were converted to YOLO format.
 In the data.yaml file used for the dataset configuration, make sure to modify line 12 as follows:  
 Replace "3: 'chicken-'n'-egg'" with "3: 'chicken-egg'".  
 
+## Google Colab Notebook
+
+You can access and edit the project notebook directly on Google Colab by clicking the link below:
+
+[Open Google Colab Notebook](https://colab.research.google.com/drive/1efMjgOZ7U159f7APo_6edfN-b8WcqISF?usp=sharing)
+
+
 ## Installation and Usage
 ### Prerequisites:
 1. Install the required Python packages:
