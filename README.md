@@ -261,3 +261,33 @@ Performance metrics were evaluated across 256 classes. Below is the performance 
 | Winter             | 27.5          | 42.9       | 55.0       | 40.7          |
 | Chinese            | 31.8          | 57.1       | 56.2       | 46.2          |
 | Eight              | 9.97          | 20.0       | 13.2       | 9.04          |
+
+
+## File structure
+The repository contains the following files and folders :
+
+- **README.md**: Project documentation (this file).
+- **Japanese_food_recognition.ipynb**: The Jupyter Notebook containing the full implementation.
+- **data.yaml**: Dataset configuration for YOLOv5.
+- **runs/**: Folder containing training results, including the best model weights.
+- **dataset/**: Folder containing the dataset and annotations.
+
+
+## References
+The following resources were used in this project:
+
+- [YOLOv5 Documentation](https://github.com/ultralytics/yolov5): Official YOLOv5 documentation.
+- [UECFOOD256 Dataset](https://www.kaggle.com/rkuo2000/uecfood256): UECFOOD256 dataset on Kaggle.
+- [Kaggle API](https://www.kaggle.com/docs/api): Official Kaggle API documentation for dataset management.
+
+
+## Issues and Future Work
+
+### Known Issues:
+- **Imbalanced Data**: Some food categories have very few examples, which can lead to lower precision and recall for those classes.
+- **Model Overfitting**: Despite regularization and augmentation, overfitting may occur for smaller classes.
+
+### Future Work:
+- **Increase Dataset Size**: Adding more food images to the dataset could improve the model's performance, especially for underrepresented categories.
+- **Experiment with Other YOLO Architectures**: Exploring advanced versions like YOLOv8 could provide better performance and faster inference times.
+- **Model Deployment**: Consider deploying the trained model as a web application or a mobile app for real-time food recognition.
